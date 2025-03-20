@@ -1,0 +1,100 @@
+<!DOCTYPE html><!-- indica ao navegador qual versão do HTML está sendo usada no documento-->
+<html lang="pt-BR"> <!--Definição da linguagem do programa-->
+<head><!--Definição de informações sobre o programa-->
+    <meta charset="UTF-8"> <!--Definição do conjunto de carácteres utilizados no programa-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Nesta linha é definida comoo programa se apresentará para dispositivos móveis-->
+    <title>Exemplo Completo de HTML</title><!--Definição do título do programa-->
+    
+</head><!--Encerrando definição de informações sobre o programa-->
+<body><!--Abertura do corpo do programa -->
+    <!-- Cabeçalho -->
+    <header><!--Definição da seção de Cabeçalho -->
+        <h1>Exemplo Completo de HTML</h1><!--Esta linha define o cabeçalho do programa. Ou seja, a primeira informação do programa-->
+        <nav><!--Definindo seção de navegação-->
+            <ul> <!--Criação de linha de navegação-->
+                <li><a href="#home">Início</a></li><!--Esta linha e as 3 linhas seguintes, criam linkd de navegação. mediante uma lista não ordenada-->
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul><!--Encerramento de linha de navegação-->
+        </nav><!--Encerrando da definição da seção de navegação-->
+    </header><!--Encerramento da definição da seção de Cabeçalho -->
+
+    <!-- Seção de Introdução -->
+    <section id="home"> <!--Abertura da seção de introdução-->
+        <h2>Bem-vindo</h2><!--Definição da nota de boas vindas do programa-->
+        <p>Esta é uma página de exemplo que demonstra uma ampla gama de elementos HTML.</p><!--Inserção de informação no programa->
+        <img src="mario.jpg" alt="Imagem de Exemplo" width="300" height="200"> <!--inserção de imagem e definição de tamanho-->
+    </section><!--Fechamento da seção de introdução-->
+
+    <!-- Seção Sobre -->
+    <section id="about"> <!--abertura da seção de sobre-->
+        <h2>Sobre Nós</h2><!--Inserção de informações sobre a empresa-->
+        <p>Somos uma empresa fictícia que oferece uma variedade de serviços para demonstrar o uso de HTML.</p><!--Inserção de informações sobre a empresa-->
+        <ul><!--Inserção de lista não ordenada-->
+            <li>Visão Geral</li><!--Define o primeiro elemento da lista. A linha sobre visão da empresa-->
+            <li>Missão</li><!--Define o segundo elemento da lista. A linha sobre missão da empresa-->
+            <li>Valores</li><!--Define o terceiroo elemento da lista. A linha sobre valores da empresa-->
+        </ul><!--Fechamento da inserção de lista-->
+    </section><!--Encerramento da seção de sobre-->
+
+    <!-- Seção de Serviços -->
+    <section id="services"><!--abertura da seção de serviços-->
+        <h2>Serviços</h2><!--Inserção do nome da seção e tamanho da palavra-->
+        <ol><!--abertura de lista ordenada-->
+            <li>Desenvolvimento Web</li><!--Apresenta o primeiro serviço prestado-->
+            <li>Consultoria em TI</li><!--Apresenta o segundo serviço prestado-->
+            <li>Suporte Técnico</li><!--Apresenta o terceiro serviço prestado-->
+        </ol><!--Fechamento de lista ordenada-->
+
+        <!-- Tabela de Preços -->
+        <h3>Preços</h3><!--Inserção do nome da seção e tamanho da palavra-->
+        <table border="1"><!--Definição do inicio de tabela e a inserção de bordas da mesma-->
+            <thead> <!--Definição do cabeçalho da tabela-->
+                <tr><!--Inserção de linha dentro da tabela-->
+                    <th>Serviço</th><!--Define célula dentro do cabeçalho na tabela-->
+                    <th>Preço</th><!--Define célula dentro do cabeçalho na tabela-->
+                </tr><!--fechamento de linha dentro da tabela-->
+            </thead><!--Definição do cabeçalho da tabela-->
+            <tbody><!--Agrupamento de corpo da tabela-->
+                <tr><!--Inserção de linha dentro da tabela-->
+                    <td>Desenvolvimento Web</td><!--Definição de células de dados(serviço) dentro da tabela-->
+                    <td>R$ 1500,00</td><!--Definição de células de dados(preço) dentro da tabela-->
+                </tr><!--fechamento da linha dentro da tabela-->
+                <tr><!--Inserção de linha dentro da tabela-->
+                    <td>Consultoria em TI</td><!--Definição de células de dados(serviço) dentro da tabela-->
+                    <td>R$ 1000,00</td><!--Definição de células de dados(preço) dentro da tabela-->
+                </tr><!--fechamento da linha dentro da tabela-->
+                <tr><!--Inserção de linha dentro da tabela-->
+                    <td>Suporte Técnico</td><!--Definição de células de dados(serviço) dentro da tabela-->
+                    <td>R$ 500,00</td><!--Definição de células de dados(preço) dentro da tabela-->
+                </tr><!--fechamento da linha dentro da tabela-->
+            </tbody><!--Encerrando agrupamento de corpo da tabela-->
+        </table><!--Fechamento da tabela-->
+    </section><!--Fechamento da seção de serviços-->
+
+    <!-- Seção de Contato -->
+    <section id="contact"> <!--abertura da seção de contato-->
+        <h2>Contato</h2><!--Inserção do nome da seção e tamanho da palavra-->
+        <p>Preencha o formulário abaixo para entrar em contato conosco:</p><!--Inserção de informações sobre a seção-->
+        <form action="/submit" method="post"> <!--Definição do início de um formulário e especifica como e para onde os dados do formulário devem ser enviados quando o usuário o submete-->
+            <label for="name">Nome:</label><!--Criação de rótulo associado a um elemento do formulário-->
+            <input type="text" id="name" name="name" required><!--Defição de campo de entrada de texto(nome) dentro do formulário-->
+            <br><br><!--Quebrando linha-->
+            <label for="email">Email:</label><!--Criação de rótulo associado a um elemento do formulário-->
+            <input type="email" id="email" name="email" required><!--Defição de campo de entrada de texto(email) dentro do formulário-->
+            <br><br><!--Quebrando linha-->
+            <label for="message">Mensagem:</label><!--Criação de rótulo associado a um elemento do formulário-->
+            <textarea id="message" name="message" rows="4" required></textarea><!--Defição de campo de entrada de texto(mensagem pretendida pelo usuário) dentro do formulário-->
+            <br><br><!--Quebrando linha-->
+            <input type="submit" value="Enviar"><!--Inserção da tecla de submissão do formulário-->
+        </form><!--Fechando formulário-->
+    </section><!--Encerramento da seção de contato-->
+
+    <!-- Rodapé -->
+    <footer><!-- Definindo rodapé do programa -->
+        <p>&copy; 2024 Exemplo Completo de HTML. Todos os direitos reservados.</p> <!--Inserção de copyright, defininição de reversa dos direitos autorais e o ano de definição-->
+    </footer><!--Fechando rodapé do programa -->
+</body><!--Fechando corpo do programa -->
+</html><!--Encerrando o programa -->
+
